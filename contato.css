@@ -1,0 +1,102 @@
+:root {
+            --cobalto: #0A3D62;        /* Azul mais escuro e suave */
+            --cobalto-escuro: #072f4a;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--cobalto); /* NOVO FUNDO EM AZUL SUAVE */
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 14px;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--cobalto);
+            font-size: 2.2em;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Layout duas colunas */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        /* Info */
+        .info-contato h2 {
+            color: var(--cobalto);
+            margin-bottom: 15px;
+        }
+
+        .info-contato p {
+            font-size: 1.1em;
+            margin: 8px 0;
+            color: #333;
+        }
+
+        /* Formulário */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 14px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+            transition: 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--cobalto);
+            box-shadow: 0 0 6px rgba(10,61,98,0.4);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 160px;
+        }
+
+        button {
+            width: 200px;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: var(--cobalto);
+            color: #fff;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: 0.3s;
+            align-self: flex-end;
+        }
+
+        button:hover {
+            background: var(--cobalto-escuro);
+        }
+
+        /* Responsividade */
+        @media (max-width: 750px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            button {
+                width: 100%;
+            }
+        }
