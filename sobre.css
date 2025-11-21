@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #0A3D62;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fundo */
+.container-pagina {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Quadrado branco */
+.cartao-conteudo {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 48px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.cabecalho-cartao {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.cabecalho-cartao h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1a1a1a;
+    letter-spacing: -0.02em;
+}
+
+/* Infos */
+.conteudo-sobre {
+    margin-bottom: 32px;
+}
+
+.descricao {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #4a4a4a;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+/* Imagem em destaque */
+.espaco-destaque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.moldura-arte {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+
+    /* Imagem adicionada */
+    background-image: url('https://i.pinimg.com/originals/d6/c8/b3/d6c8b3b16319f3e8d91e681a9beb2540.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    position: relative;
+}
+
+/* Remove o placeholder antigo */
+.moldura-arte::before,
+.moldura-arte::after {
+    content: none;
+}
+
+
+/* Botão para ir pra página index */
+.rodape-cartao {
+    text-align: center;
+}
+
+.botao-cta {
+    background-color: #0A3D62;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    width: 100%;
+    max-width: 280px;
+    text-decoration: none;
+}
+
+.botao-cta:hover {
+    background-color: #0A3D62;
+    transform: translateY(-1px);
+}
+
+.botao-cta:active {
+    transform: translateY(0);
+}
+
+/* Responsividade */
+@media (max-width: 640px) {
+    .cartao-conteudo {
+        padding: 36px 28px;
+    }
+    
+    .cabecalho-cartao h1 {
+        font-size: 28px;
+    }
+    
+    .descricao {
+        font-size: 15px;
+    }
+    
+    .moldura-arte {
+        height: 160px;
+    }
+    
+    .botao-cta {
+        font-size: 15px;
+        padding: 12px 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 16px;
+    }
+    
+    .cartao-conteudo {
+        padding: 32px 24px;
+    }
+    
+    .cabecalho-cartao h1 {
+        font-size: 24px;
+    }
+    
+    .cabecalho-cartao {
+        margin-bottom: 24px;
+    }
+    
+    .conteudo-sobre {
+        margin-bottom: 24px;
+    }
+    
+    .descricao {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+    
+    .moldura-arte {
+        height: 140px;
+    }
+
+}

@@ -100,3 +100,19 @@
                 width: 100%;
             }
         }
+        /* Botão pra voltar pro menu */
+        .btn-voltar {
+            display: inline-block;
+            margin-bottom: 15px;
+            padding: 10px 20px;
+            background-color: #072f4a;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }    
+
+        .btn-voltar:hover {
+            background-color: #0A3D62;
+        }
