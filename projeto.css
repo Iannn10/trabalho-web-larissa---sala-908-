@@ -1,0 +1,351 @@
+/* -------------------------
+   VARIÁVEIS DE COR
+-------------------------- */
+:root {
+  --primary-dark: #1a2332;
+  --primary: #2c3e50;
+  --primary-light: #34495e;
+  --accent: #d4af37;
+  --accent-hover: #b8941f;
+  --bg-light: #f8f9fa;
+  --text-dark: #1a1a1a;
+  --text-light: #ffffff;
+  --text-muted: #6c757d;
+  --shadow: rgba(0, 0, 0, 0.15);
+  --shadow-hover: rgba(0, 0, 0, 0.25);
+}
+
+/* -------------------------
+   RESET E BASE
+-------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--primary-light) 100%);
+  color: var(--text-dark);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* -------------------------
+   HEADER
+-------------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo svg {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.brand h1 {
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.brand .lead {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.search {
+  padding: 10px 12px;
+  width: 230px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  background: var(--bg-light);
+}
+
+.search:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+  background: var(--text-light);
+}
+
+.btn {
+  padding: 10px 16px;
+  background: var(--primary-dark);
+  color: var(--text-light);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-family: inherit;
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.btn:hover {
+  background: var(--accent);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(212, 175, 55, 0.3);
+}
+
+.btn-home {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* -------------------------
+   HERO
+-------------------------- */
+.hero {
+  margin-bottom: 40px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.hero h2 {
+  font-size: 1.9rem;
+  margin-bottom: 6px;
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.hero p {
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.tag {
+  background: var(--accent);
+  color: var(--text-light);
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* -------------------------
+   GALERIA
+-------------------------- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: var(--text-light);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 5px 18px var(--shadow);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px var(--shadow-hover);
+  border-color: var(--accent);
+}
+
+.thumb img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+}
+
+.info {
+  padding: 15px;
+}
+
+.info h3 {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.info p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.meta-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.meta-row .tag {
+  background: var(--primary-light);
+  color: var(--text-light);
+  font-size: 0.7rem;
+}
+
+/* -------------------------
+   LIGHTBOX
+-------------------------- */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 35, 50, 0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lb-content {
+  background: var(--text-light);
+  border-radius: 12px;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  animation: fadeIn 0.3s ease;
+  position: relative;
+  z-index: 1001;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border: 2px solid var(--accent);
+}
+
+.lb-image img {
+  width: 500px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lb-side {
+  padding: 20px;
+  flex: 1;
+}
+
+.lb-side h3 {
+  color: var(--primary-dark);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.lb-side p {
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.lb-desc {
+  margin: 15px 0;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.lb-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.lb-actions .btn {
+  background: var(--primary-dark);
+  cursor: pointer;
+  position: relative;
+  z-index: 1002;
+}
+
+.lb-actions .btn:hover {
+  background: var(--accent);
+}
+
+.lb-backdrop {
+  position: absolute;
+  inset: 0;
+}
+
+/* Animação suave */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Responsividade */
+@media (max-width: 760px) {
+  .lb-content {
+    flex-direction: column;
+  }
+
+  .lb-image img {
+    width: 100%;
+    height: 300px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .controls {
+    width: 100%;
+  }
+
+  .search {
+    width: 100%;
+  }
+}
