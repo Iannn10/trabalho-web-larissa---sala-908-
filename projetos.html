@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Galeria do Museu</title>
+  <!-- Arquivo CSS externo -->
+  <link rel="stylesheet" href="projeto.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <a href="index.html" class="logo-link">
+          <div class="logo">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Moldura do quadro -->
+              <rect x="8" y="8" width="34" height="34" rx="2" fill="#1a2332" stroke="#d4af37" stroke-width="2"/>
+              <!-- Linha decorativa interna -->
+              <rect x="12" y="12" width="26" height="26" rx="1" fill="none" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="2 2"/>
+              <!-- Pincel/arte no centro -->
+              <path d="M25 18 L22 25 L25 28 L28 25 Z" fill="#d4af37" opacity="0.8"/>
+              <circle cx="25" cy="23" r="2" fill="#1a2332"/>
+            </svg>
+          </div>
+        </a>
+        <div>
+          <h1>Galeria do Museu</h1>
+          <p class="lead">Exposições destacadas — Curadoria digital</p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <a href="index.html" class="btn btn-home">← Início</a>
+        <input class="search" type="search" placeholder="Buscar por obra, artista, período">
+        <button class="btn">Filtrar</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="meta">
+          <h2>Exposição: História Em Arte </h2>
+          <p>Uma seleção curada de obras que exploram materiais e memórias do passado do mundo.</p>
+        </div>
+        <div><p class="tag">Curadoria: Equipe Larissa • 10 obras</p></div>
+      </section>
+
+
+    
+<section class="gallery" id="gallery">
+
+  <!-- Obra 1 -->
+  <article class="card" tabindex="0" role="button" data-index="0" data-title="Vênus e o tocador de alaúde" data-artist="Ticiano" data-year="1565–70" data-desc="65 x 82 1/2 pol. (165,1 x 209,6 cm)" data-src="imagens/foto1.jpg">
+    <div class="thumb">
+      <img src="imagens/foto1.jpg" alt="Vênus e o tocador de alaúde">
+    </div>
+    <div class="info">
+      <h3>Vênus e o tocador de alaúde</h3>
+      <p>Ticiano • 1565–70</p>
+      <div class="meta-row"><span class="tag">Óleo sobre tela</span><span class="tag">Nº 01</span></div>
+    </div>
+  </article>
+
+  <!-- Obra 2 -->
+  <article class="card" tabindex="0" role="button" data-index="1" data-title="O Batismo de Cristo" data-artist="Jacopo Bassano" data-year="1590" data-desc="75 1/2 x 63 1/8 pol. (191,8 x 160,3 cm)" data-src="imagens/foto2.jpeg">
+    <div class="thumb">
+      <img src="imagens/foto2.jpeg" alt="O Batismo de Cristo">
+    </div>
+    <div class="info">
+      <h3>O Batismo de Cristo</h3>
+      <p>Jacopo Bassano • 1590</p>
+      <div class="meta-row"><span class="tag">Óleo sobre tela</span><span class="tag">Nº 02</span></div>
+    </div>
+  </article>
+
+  <!-- Obra 3 -->
+  <article class="card" tabindex="0" role="button" data-index="2" data-title="Retrato de um Homem" data-artist="Arnold Boonen " data-year="1720" data-desc="22 1/4 x 18 3/4 pol. (56,5 x 47,6 cm)" data-src="imagens/foto3.jpeg">
+    <div class="thumb">
+      <img src="imagens/foto3.jpeg" alt="Retrato de um Homem">
+    </div>
+    <div class="info">
+      <h3>Retrato de um Homem</h3>
+      <p>Arnold Boonen  • 1720</p>
+      <div class="meta-row"><span class="tag">Óleo sobre tela</span><span class="tag">Nº 03</span></div>
+    </div>
+  </article>
+
+  <!-- Obra 4 -->
+  <article class="card" tabindex="0" role="button" data-index="3" data-title="Mulher em um sofá" data-artist="Edgar Degas " data-year="1875" data-desc="48,6 x 42,5 cm (19 1/8 x 16 3/4 pol.)" data-src="imagens/foto4.jpeg"">
+    <div class="thumb">
+      <img src="imagens/foto4.jpeg" alt="Mulher em um sofá">
+    </div>
+    <div class="info">
+      <h3>Mulher em um sofá</h3>
+      <p>Edgar Degas  • 1875</p>
+      <div class="meta-row"><span class="tag">Desenho a grafite</span><span class="tag">Nº 04</span></div>
+    </div>
+  </article>
+
+  <!-- Obra 5 -->
+  <article class="card" tabindex="0" role="button" data-index="4" data-title="Nossa Senhora com o Menino Jesus" data-artist="Luca Signorelli " data-year="1505–7" data-desc="20 1/4 x 18 3/4 pol. (51,4 x 47,6 cm)" data-src="imagens/foto5.jpeg">
+    <div class="thumb">
+      <img src="imagens/foto5.jpeg" alt="Nossa Senhora com o Menino Jesus">
+    </div>
+    <div class="info">
+      <h3>Nossa Senhora com o Menino Jesus</h3>
+      <p>Luca Signorelli  • 1505–7</p>
+      <div class="meta-row"><span class="tag">Óleo e ouro sobre madeira</span><span class="tag">Nº 05</span></div>
+    </div>
+  </article>
+
+  <!-- Obra 6 -->
+  <article class="card" tabindex="0" role="button" data-index="5" data-title="O Mar Calmo" data-artist="Gustave Courbet" data-year="1869" data-desc="23 1/2 x 28 3/4 pol. (59,7 x 73 cm)" data-src="imagens/foto6.jpeg">
+    <div class="thumb">
+      <img src="imagens/foto6.jpeg" alt="O Mar Calmo">
+    </div>
+    <div class="info">
+      <h3>O Mar Calmo</h3>
+      <p>Gustave Courbet • 1869</p>
+      <div class="meta-row"><span class="tag">Óleo sobre tela</span><span class="tag">Nº 06</span></div>
+    </div>
+  </article>
+
+  <!-- Obra 7 -->
+  <article class="card" tabindex="0" role="button" data-index="6" data-title="O Banquete do Leão" data-artist="Henri Rousseau" data-year="1907" data-desc="44 3/4 pol. x 63 pol. (113,7 x 160 cm)" data-src="imagens/foto7.jpeg">
+    <div class="thumb">
+      <img src="imagens/foto7.jpeg" alt="O Banquete do Leão">
+    </div>
+    <div class="info">
+      <h3>O Banquete do Leão</h3>
+      <p>Henri Rousseau • 1907</p>
+      <div class="meta-row"><span class="tag">Óleo sobre tela</span><span class="tag">Nº 07</span></div>
+    </div>
+  </article>
+
+  <!-- Obra 8 -->
+  <article class="card" tabindex="0" role="button" data-index="7" data-title="A Carruagem de Apolo" data-artist="Odilon Redon" data-year="1905–16" data-desc="26 x 32 polegadas (66 x 81,3 cm)" data-src="imagens/foto8.jpeg">
+    <div class="thumb">
+      <img src="imagens/foto8.jpeg" alt="A Carruagem de Apolo">
+    </div>
+    <div class="info">
+      <h3>A Carruagem de Apolo</h3>
+      <p>Odilon Redon • 1905–16</p>
+      <div class="meta-row"><span class="tag">Óleo sobre tela</span><span class="tag">Nº 08</span></div>
+    </div>
+  </article>
+
+  <!-- Obra 9 -->
+  <article class="card" tabindex="0" role="button" data-index="8" data-title="O Porto" data-artist="Josef Presser" data-year="1943" data-desc="34 3/4 x 53 1/4 pol. (88,3 x 135,3 cm)" data-src="imagens/foto9.jpeg">
+    <div class="thumb">
+      <img src="imagens/foto9.jpeg" alt="O Porto">
+    </div>
+    <div class="info">
+      <h3>O Porto</h3>
+      <p>Josef Presser • 1943</p>
+      <div class="meta-row"><span class="tag">Óleo sobre madeira</span><span class="tag">Nº 09</span></div>
+    </div>
+  </article>
+
+  <!-- Obra 10 -->
+  <article class="card" tabindex="0" role="button" data-index="9" data-title="Estação Wada" data-artist="Utagawa Hiroshige " data-year="1835" data-desc="9 15/32 x 14 1/4 pol. (24,1 x 36,2 cm)" data-src="imagens/foto10.jpeg">
+    <div class="thumb">
+      <img src="imagens/foto10.jpeg" alt="Estação Wada">
+    </div>
+    <div class="info">
+      <h3>Estação Wada</h3>
+      <p>Utagawa Hiroshige  • 1835</p>
+      <div class="meta-row"><span class="tag">Xilogravura; tinta e cor sobre papel</span><span class="tag">Nº 10</span></div>
+    </div>
+  </article>
+
+  <!-- Obra 11 -->
+  <article class="card" tabindex="0" role="button" data-index="10" data-title="Mulher costurando" data-artist="Georges Lemmen" data-year="1909" data-desc="6,8 x 25,1 cm (6 5/8 x 9 7/8 pol.)" data-src="imagens/foto11.jpeg">
+    <div class="thumb">
+      <img src="imagens/foto11.jpeg" alt="Mulher costurando">
+    </div>
+    <div class="info">
+      <h3>Mulher costurando </h3>
+      <p>Georges Lemmen  • 1909</p>
+      <div class="meta-row"><span class="tag">Caneta, tinta preta e aquarela sobre papel</span><span class="tag">Nº 11</span></div>
+    </div>
+  </article>
+
+  <!-- Obra 12 -->
+  <article class="card" tabindex="0" role="button" data-index="11" data-title="Prados de Outono" data-artist="Albert Pinkham Ryde" data-year="1912–17" data-desc="21 x 17 1/4 pol. (53,3 x 43,8 cm)" data-src="imagens/foto12.jpeg">
+    <div class="thumb">
+      <img src="imagens/foto12.jpeg" alt="Prados de Outono">
+    </div>
+    <div class="info">
+      <h3>Prados de Outono</h3>
+      <p>Albert Pinkham Ryde • 1912–17</p>
+      <div class="meta-row"><span class="tag">Óleo sobre tela montada em madeira</span><span class="tag">Nº 12</span></div>
+    </div>
+  </article>
+
+  
+
+</section>
+
+
+    </main>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <div class="lb-backdrop" id="lb-backdrop"></div>
+    <div class="lb-content">
+      <div class="lb-image">
+        <img id="lb-img" src="imagens/foto1.jpg" alt=""></div>  
+      <aside class="lb-side">
+        <h3 id="lb-title"></h3>
+        <p id="lb-artist"></p>
+        <p id="lb-desc" class="lb-desc"></p>
+        <div class="lb-actions">
+          <button class="btn" id="prev">←</button>
+          <button class="btn" id="next">→</button>
+          <button class="btn" id="close">✕</button>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  
+
+  <script>
+    const cards = Array.from(document.querySelectorAll('.card'));
+    const lightbox = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lb-img');
+    const lbTitle = document.getElementById('lb-title');
+    const lbArtist = document.getElementById('lb-artist');
+    const lbDesc = document.getElementById('lb-desc');
+    let current = 0;
+
+    function openLightbox(index){
+      if(index < 0 || index >= cards.length) return;
+      const c = cards[index];
+      if(!c) return;
+      
+      lbImg.src = c.dataset.src;
+      lbTitle.textContent = c.dataset.title;
+      lbArtist.textContent = `${c.dataset.artist} • ${c.dataset.year}`;
+      lbDesc.textContent = c.dataset.desc;
+      lightbox.classList.add('open');
+      current = index;
+    }
+
+    function closeLightbox(){ 
+      lightbox.classList.remove('open'); 
+    }
+
+    function prevImage(){
+      const newIndex = (current - 1 + cards.length) % cards.length;
+      openLightbox(newIndex);
+    }
+
+    function nextImage(){
+      const newIndex = (current + 1) % cards.length;
+      openLightbox(newIndex);
+    }
+
+    cards.forEach((c,i)=>{
+      c.addEventListener('click',()=>openLightbox(i));
+      c.addEventListener('keydown',e=>{ if(e.key==='Enter') openLightbox(i); });
+    });
+
+    const closeBtn = document.getElementById('close');
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+    const backdrop = document.getElementById('lb-backdrop');
+
+    closeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeLightbox();
+    });
+    
+    prevBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      prevImage();
+    });
+    
+    nextBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      nextImage();
+    });
+    
+    backdrop.addEventListener('click', closeLightbox);
+
+    document.addEventListener('keydown',e=>{
+      if(!lightbox.classList.contains('open')) return;
+      if(e.key==='Escape') closeLightbox();
+      if(e.key==='ArrowLeft') prevImage();
+      if(e.key==='ArrowRight') nextImage();
+    });
+  </script>
+
+</body>
+</html>
