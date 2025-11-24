@@ -1,118 +1,150 @@
 :root {
-            --cobalto: #0A3D62;        /* Azul mais escuro e suave */
-            --cobalto-escuro: #072f4a;
-        }
+    --primary-dark: #1a2332;
+    --primary: #2c3e50;
+    --primary-light: #34495e;
+    --accent: #d4af37;
+    --accent-hover: #b8941f;
+    --bg-light: #f8f9fa;
+    --text-dark: #1a1a1a;
+    --text-light: #ffffff;
+    --text-muted: #6c757d;
+    --shadow: rgba(0, 0, 0, 0.15);
+}
 
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: var(--cobalto); /* NOVO FUNDO EM AZUL SUAVE */
-        }
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--primary-light) 100%);
+    min-height: 100vh;
+    padding: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
-        .container {
-            max-width: 1100px;
-            margin: 40px auto;
-            background: #fff;
-            padding: 40px;
-            border-radius: 14px;
-            box-shadow: 0 4px 25px rgba(0,0,0,0.2);
-        }
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    background: var(--text-light);
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px var(--shadow);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+}
 
-        h1 {
-            text-align: center;
-            margin-bottom: 40px;
-            color: var(--cobalto);
-            font-size: 2.2em;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
+.link-voltar {
+    display: inline-block;
+    color: var(--primary-dark);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    background: var(--bg-light);
+    border: 1px solid transparent;
+}
 
-        /* Layout duas colunas */
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-        }
+.link-voltar:hover {
+    background: var(--accent);
+    color: var(--text-light);
+    transform: translateX(-3px);
+}
 
-        /* Info */
-        .info-contato h2 {
-            color: var(--cobalto);
-            margin-bottom: 15px;
-        }
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary-dark);
+    font-size: 2.2em;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
 
-        .info-contato p {
-            font-size: 1.1em;
-            margin: 8px 0;
-            color: #333;
-        }
+/* Layout duas colunas */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
 
-        /* Formulário */
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
+/* Info */
+.info-contato h2 {
+    color: var(--primary-dark);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
 
-        input, textarea {
-            width: 100%;
-            padding: 14px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-            font-size: 1em;
-            transition: 0.3s;
-        }
+.info-contato p {
+    font-size: 1.1em;
+    margin: 8px 0;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
 
-        input:focus, textarea:focus {
-            outline: none;
-            border-color: var(--cobalto);
-            box-shadow: 0 0 6px rgba(10,61,98,0.4);
-        }
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
-        textarea {
-            resize: vertical;
-            min-height: 160px;
-        }
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    background-color: var(--bg-light);
+}
 
-        button {
-            width: 200px;
-            padding: 14px;
-            border: none;
-            border-radius: 8px;
-            background: var(--cobalto);
-            color: #fff;
-            cursor: pointer;
-            font-size: 1em;
-            font-weight: bold;
-            transition: 0.3s;
-            align-self: flex-end;
-        }
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+    background-color: var(--text-light);
+}
 
-        button:hover {
-            background: var(--cobalto-escuro);
-        }
+textarea {
+    resize: vertical;
+    min-height: 160px;
+}
 
-        /* Responsividade */
-        @media (max-width: 750px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
-            button {
-                width: 100%;
-            }
-        }
-        /* Botão pra voltar pro menu */
-        .btn-voltar {
-            display: inline-block;
-            margin-bottom: 15px;
-            padding: 10px 20px;
-            background-color: #072f4a;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: 0.3s;
-        }    
+button {
+    width: 200px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary-dark);
+    color: var(--text-light);
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    align-self: flex-end;
+    box-shadow: 0 4px 6px var(--shadow);
+}
 
-        .btn-voltar:hover {
-            background-color: #0A3D62;
-        }
+button:hover {
+    background: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(212, 175, 55, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Responsividade */
+@media (max-width: 750px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    button {
+        width: 100%;
+    }
+    .container {
+        padding: 30px 20px;
+    }
+}
